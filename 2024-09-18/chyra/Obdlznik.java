@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.math.*;
 
 public class Obdlznik{
     // datove polozky
@@ -6,8 +7,8 @@ public class Obdlznik{
     private float stranaB;
     private String farba;
 
-
     // metody
+    // konstruktor
     public Obdlznik(float stranaA, float stranaB) {
         this.stranaA = stranaA;
         this.stranaB = stranaB;
@@ -32,14 +33,7 @@ public class Obdlznik{
         farba = vstup.next();
     }
 
-    public float obvod() {
-        return (stranaA + stranaB) * 2;
-    }
-
-    public float obsah() {
-        return stranaA * stranaB;
-    }
-
+    // getter/setter
     public float getStranaA() {
         return stranaA;
     }
@@ -62,5 +56,32 @@ public class Obdlznik{
 
     public void setFarba(String farba) {
         this.farba = farba;
+    }
+
+    // tostring()
+    public String toString() {
+        return "a = " + this.getStranaA() +
+            "\nb = " + this.getStranaB() +
+            "\nfarba = " + this.getFarba() +
+            "\n" +
+            super.toString();
+    }
+
+    //  info()
+    public void info() {
+        System.out.println(toString());
+    }
+
+    // metody
+    public float obvod() {
+        return (stranaA + stranaB) * 2;
+    }
+
+    public float obsah() {
+        return stranaA * stranaB;
+    }
+
+    public float uhlopriecka() {
+        return sqrt(stranaA * stranaB);
     }
 }
