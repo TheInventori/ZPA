@@ -10,8 +10,11 @@ public class Main {
     
     // t1.info();
 
-    Kvader k1 = new Kvader();
+    // Kvader k1 = new Kvader();
 
-    k1.info();
+    // k1.info();
+
+    Kruh kruh1 = new Kruh();
+    kruh1.info();
   }
 }

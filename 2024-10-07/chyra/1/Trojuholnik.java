@@ -75,6 +75,7 @@ public class Trojuholnik implements Tvar2D{
   }
 
   public void info() {
+    System.out.println("****    Trojuholnik    ****");
     System.out.println(toString() + "\n");
   }
 }
