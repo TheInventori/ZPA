@@ -1,2 +1,2 @@
 # ZPA
-poznamky zo zakladov programovania pre andriod
+poznamky zo zakladov programovania pre andriod a opakovanie jazyku JAVA
